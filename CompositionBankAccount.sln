@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositionBankAccount.Entities", "CompositionBankAccount.Entities\CompositionBankAccount.Entities.csproj", "{21F18AE1-A99C-487B-AED3-E5B3EBCBDD9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositionBankAccount.EntitiesTests", "CompositionBankAccount\CompositionBankAccount.EntitiesTests.csproj", "{8CB83DA4-3A8E-4CFF-BAAB-2403138C9B33}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21F18AE1-A99C-487B-AED3-E5B3EBCBDD9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F18AE1-A99C-487B-AED3-E5B3EBCBDD9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F18AE1-A99C-487B-AED3-E5B3EBCBDD9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F18AE1-A99C-487B-AED3-E5B3EBCBDD9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB83DA4-3A8E-4CFF-BAAB-2403138C9B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB83DA4-3A8E-4CFF-BAAB-2403138C9B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB83DA4-3A8E-4CFF-BAAB-2403138C9B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB83DA4-3A8E-4CFF-BAAB-2403138C9B33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

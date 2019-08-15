@@ -50,7 +50,7 @@ namespace CompositionBankAccount.EntitiesTest
                 new Account(0m)
             });
 
-            Assert.AreEqual(testCustomer.GetAssets() + testCustomer.GetDebts(), testCustomer.GetAssets());
+            Assert.AreEqual(testCustomer.GetAssets() + testCustomer.GetDebts(), testCustomer.GetTotalBalance());
         }
 
         [TestMethod]
@@ -93,8 +93,8 @@ namespace CompositionBankAccount.EntitiesTest
         {
             Customer testCustomer = new Customer(new List<Account>()
             {
-                new Account(-20000000),
-                new Account(-5000000),
+                new Account(-2000000),
+                new Account(-500000),
                 new Account(1000000),
                 new Account(250000)
             });
@@ -102,8 +102,8 @@ namespace CompositionBankAccount.EntitiesTest
 
             testCustomer = new Customer(new List<Account>()
             {
-                new Account(-2000000),
-                new Account(-500000),
+                new Account(-200000),
+                new Account(-50000),
                 new Account(25000),
                 new Account(25000)
             });

@@ -13,7 +13,6 @@ namespace CompositionBankAccount.Entities
     {
         private int id;
         private List<Account> accounts;
-        private int rating;
 
         /// <summary>
         /// Intilializes a new <see cref="Customer"/> object with data from a database
@@ -22,7 +21,7 @@ namespace CompositionBankAccount.Entities
         /// <param name="accounts">The customer's accounts</param>
         public Customer(int id, List<Account> accounts)
         {
-            
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -31,7 +30,7 @@ namespace CompositionBankAccount.Entities
         /// <param name="accounts">The customer's accounts</param>
         public Customer(List<Account> accounts)
         {
-            
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -41,7 +40,7 @@ namespace CompositionBankAccount.Entities
         {
             get
             {
-                return rating;
+                throw new NotImplementedException();
             }
         }
 
@@ -51,7 +50,7 @@ namespace CompositionBankAccount.Entities
         /// <returns>the amount of debt the customer is in</returns>
         public decimal GetDebts()
         {
-            return 0;
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -60,7 +59,7 @@ namespace CompositionBankAccount.Entities
         /// <returns>the amount of money the customer owns</returns>
         public decimal GetAssets()
         {
-            return 0;
+            throw new NotImplementedException();
         }
 
         /// <summary>
@@ -69,9 +68,7 @@ namespace CompositionBankAccount.Entities
         /// <returns>The total amount of money the customer owns</returns>
         public decimal GetTotalBalance()
         {
-            return 0;
+            throw new NotImplementedException();
         }
-
-
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CompostionBankAccount.Entities
+namespace CompositionBankAccount.Entities
 {
     /// <summary>
     /// An object used to describe a bank account

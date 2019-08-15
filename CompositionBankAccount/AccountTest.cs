@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CompostionBankAccount.Entities;
+using CompositionBankAccount.Entities;
 
-namespace CompostionBankAccount.EntitiesTests
+namespace CompositionBankAccount.EntitiesTests
 {
     [TestClass]
     public class AccountTest

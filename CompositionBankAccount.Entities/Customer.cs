@@ -58,26 +58,26 @@ namespace CompositionBankAccount.Entities
                     }
                     //needed rating for assets < 50000 && debts < -2500000
                 }
-                else if(debts >= -2500000 && debts <= -250000 && assets >= 50000 && assets <= 1250000)
+                else if(debts <= -250000 && assets >= 50000 && assets <= 1250000)
                 {
                     return 3;
                     //needed rating for assets debts >= -2500000 && debts <= -250000 && assets < 50000
                 }
-                else
+                else if(assets < 50000 && debts > -250000)
                 {
                     if(Math.Abs(debts) > assets)
                     {
                         return 5;
                     }
-                    else if(assets < 50000)
+                    else
                     {
                         return 4;
                     }
 
-                    //needed rating for debts < -250000 && assets >= 50000 
+                    //needed rating for debts > -250000 && assets >= 50000 
                 }
 
-                return 0; //0 incase it doesnt fall into a rating
+                throw new InvalidOperationException("Customer doesn't fit any rating");
             }
         }
 

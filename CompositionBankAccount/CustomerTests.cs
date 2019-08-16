@@ -204,13 +204,5 @@ namespace CompositionBankAccount.EntitiesTest
             Customer testCustomer = new Customer(new List<Account>() { });
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => { testCustomer.Id = 0; });
         }
-
-        [TestMethod]
-        public void TestValidateId()
-        {
-            //Tests if id isn't allowed to be 0 or smaller
-            Assert.IsTrue(Customer.ValidateId(1).Valid);
-            Assert.IsFalse(Customer.ValidateId(0).Valid);
-        }
     }
 }

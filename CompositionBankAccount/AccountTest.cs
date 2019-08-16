@@ -108,14 +108,6 @@ namespace CompositionBankAccount.EntitiesTests
         }
 
         [TestMethod]
-        public void TestValidateId()
-        {
-            //Tests if id isn't allowed to be 0 or smaller
-            Assert.IsTrue(Account.ValidateId(1).Valid);
-            Assert.IsFalse(Account.ValidateId(0).Valid);
-        }
-
-        [TestMethod]
         public void TestValidateTransaction()
         {
             //Make sure transaction only can be between 0 and 25000

@@ -38,6 +38,7 @@ namespace CompositionBankAccount.Entities
         /// <summary>
         /// The customer's rating based on their debts and assets
         /// </summary>
+        /// <exception cref="InvalidOperationException"></exception>
         public int Rating
         {
             get
@@ -94,7 +95,7 @@ namespace CompositionBankAccount.Entities
 
             set
             {
-                (bool Valid, string ErrorMessage) = Account.ValidateId(value);
+                (bool Valid, string ErrorMessage) = Validator.ValidateId(value);
                 if(!Valid)
                 {
                     throw new ArgumentOutOfRangeException(ErrorMessage, nameof(Id));
@@ -173,21 +174,6 @@ namespace CompositionBankAccount.Entities
             }
 
             return totalMoney;
-        }
-
-        /// <summary>
-        /// Validates the given ID.
-        /// </summary>
-        /// <param name="id">the ID to validate</param>
-        /// <returns>A tuple with a bool which is true if valid and a string containing the error message if invalid</returns>
-        public static (bool Valid, string ErrorMessage) ValidateId(int id)
-        {
-            if(id <= 0)
-            {
-                return (false, "ID cannot be less than 0");
-            }
-
-            return (true, string.Empty);
         }
     }
 }
